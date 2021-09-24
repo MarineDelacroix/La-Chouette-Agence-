@@ -828,7 +828,7 @@ h2.tc-white{
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/WebP_encoded/image-de-presentation.webp");
 }
 
 @media (max-width: 1024px) {
