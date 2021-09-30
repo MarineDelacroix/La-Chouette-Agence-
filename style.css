@@ -677,7 +677,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
@@ -734,6 +734,12 @@ h4 {
     margin-bottom: 14px;
     margin-top: 24px;
 }
+.temoin{
+    font-size: 16px;;
+}
+.temoin-leg{
+    font-size: 14px;;
+}
 
 .white {
     color: #FFFFFF!important;
@@ -780,7 +786,7 @@ p.grey {
 .tc-white {
     color: #F3976C!important;
 }
-h2.tc-white{
+h3.tc-white{
     color:#FFFFFF!important;
 }
 
