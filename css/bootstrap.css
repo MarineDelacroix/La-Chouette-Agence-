@@ -153,19 +153,12 @@ button,
 html input[type=button],
 input[type=reset],
 input[type=submit] {
-    appearance: button;
-    cursor: pointer
+    cursor: pointer;
 }
 
 button[disabled],
 html input[disabled] {
     cursor: default
-}
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-    padding: 0;
-    border: 0
 }
 
 input {
@@ -1449,7 +1442,6 @@ hr {
     padding: 0;
     margin: -1px;
     overflow: hidden;
-    clip: rect(0, 0, 0, 0);
     border: 0
 }
 
@@ -1460,7 +1452,6 @@ hr {
     height: auto;
     margin: 0;
     overflow: visible;
-    clip: auto
 }
 
 [role=button] {
@@ -2997,7 +2988,6 @@ table th[class*=col-] {
         width: 100%;
         margin-bottom: 15px;
         overflow-y: hidden;
-        -ms-overflow-style: -ms-autohiding-scrollbar;
         border: 1px solid #ddd
     }
     .table-responsive>.table {
@@ -3071,7 +3061,7 @@ input[type=search] {
 input[type=checkbox],
 input[type=radio] {
     margin: 4px 0 0;
-    margin-top: 1px\9;
+    margin-top: 1px;
     line-height: normal
 }
 
@@ -3155,7 +3145,7 @@ input[type=search] {
     appearance: none;
 }
 
-@media screen and (min-device-pixel-ratio:0) {
+@media screen{
     input[type=date].form-control,
     input[type=time].form-control,
     input[type=datetime-local].form-control,
@@ -3210,7 +3200,7 @@ input[type=search] {
 .radio input[type=radio],
 .radio-inline input[type=radio] {
     position: absolute;
-    margin-top: 4px\9;
+    margin-top:4px;
     margin-left: -20px
 }
 
@@ -3654,7 +3644,7 @@ textarea.input-lg {
 .btn[disabled],
 fieldset[disabled] .btn {
     cursor: not-allowed;
-    filter: alpha(opacity=65);
+    filter: alpha(65);
     box-shadow: none;
     opacity: .65
 }
@@ -4225,7 +4215,7 @@ tbody.collapse.in {
     margin-left: 2px;
     vertical-align: middle;
     border-top: 4px dashed;
-    border-top: 4px solid\9;
+    border-top: 4px solid;
     border-right: 4px solid transparent;
     border-left: 4px solid transparent
 }
@@ -4358,14 +4348,14 @@ tbody.collapse.in {
     content: "";
     border-top: 0;
     border-bottom: 4px dashed;
-    border-bottom: 4px solid\9
+    border-bottom: 4px solid;
 }
 
 .dropup .dropdown-menu,
 .navbar-fixed-bottom .dropdown .dropdown-menu {
     top: auto;
     bottom: 100%;
-    margin-bottom: 2px
+    margin-bottom: 2px;
 }
 
 @media (min-width:768px) {
@@ -4579,7 +4569,6 @@ tbody.collapse.in {
 [data-toggle=buttons]>.btn-group>.btn input[type=checkbox],
 [data-toggle=buttons]>.btn-group>.btn input[type=radio] {
     position: absolute;
-    clip: rect(0, 0, 0, 0);
     pointer-events: none
 }
 
@@ -6090,7 +6079,7 @@ a.thumbnail:hover {
     }
 }
 
-@-o-keyframes progress-bar-stripes {
+@keyframes progress-bar-stripes {
     from {
         background-position: 40px 0
     }
@@ -6184,7 +6173,6 @@ a.thumbnail:hover {
 .media,
 .media-body {
     overflow: hidden;
-    zoom: 1
 }
 
 .media-body {
@@ -6949,7 +6937,7 @@ button.list-group-item-danger.active:hover {
     line-height: 1;
     color: #000;
     text-shadow: 0 1px 0 #fff;
-    filter: alpha(opacity=20);
+    filter: alpha(20);
     opacity: .2
 }
 
@@ -6958,7 +6946,7 @@ button.list-group-item-danger.active:hover {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-    filter: alpha(opacity=50);
+    filter: alpha(50);
     opacity: .5
 }
 
@@ -7028,12 +7016,12 @@ button.close {
 }
 
 .modal-backdrop.fade {
-    filter: alpha(opacity=0);
+    filter: alpha(0);
     opacity: 0
 }
 
 .modal-backdrop.in {
-    filter: alpha(opacity=50);
+    filter: alpha(50);
     opacity: .5
 }
 
@@ -7122,13 +7110,13 @@ button.close {
     word-spacing: normal;
     word-wrap: normal;
     white-space: normal;
-    filter: alpha(opacity=0);
+    filter: alpha(0);
     opacity: 0;
     line-break: auto
 }
 
 .tooltip.in {
-    filter: alpha(opacity=90);
+    filter: alpha(90);
     opacity: .9
 }
 
@@ -7402,7 +7390,7 @@ button.close {
     line-height: 1;
 }
 
-@media all and (transform-3d){
+@media all{
     .carousel-inner>.item {
         transition: transform .6s ease-in-out;
         backface-visibility: hidden;
@@ -7474,16 +7462,14 @@ button.close {
     color: #fff;
     text-align: center;
     text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-    filter: alpha(opacity=50);
+    filter: alpha(50);
     opacity: .5
 }
 
 .carousel-control.left {
     background-image: linear-gradient(to left, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
-    background-image: linear-gradient(to left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
     background-image: linear-gradient(to right, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
-    background-repeat: repeat-x
+    background-repeat: repeat-x;
 }
 
 .carousel-control.right {
@@ -7492,16 +7478,14 @@ button.close {
     background-image: linear-gradient(to left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
     background-image: linear-gradient(to left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
     background-image: linear-gradient(to left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
-    background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
-    background-repeat: repeat-x
+    background-repeat: repeat-x;
 }
 
 .carousel-control:focus,
 .carousel-control:hover {
     color: #fff;
     text-decoration: none;
-    filter: alpha(opacity=90);
+    filter: alpha(90);
     outline: 0;
     opacity: .9
 }
@@ -7716,7 +7700,7 @@ button.close {
     position: fixed
 }
 
-@-ms-viewport {
+@viewport {
     width: device-width
 }
 
