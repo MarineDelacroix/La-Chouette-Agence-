@@ -178,19 +178,9 @@ input[type=radio] {
     padding: 0;
 }
 
-input[type=number]::inner-spin-button,
-input[type=number]::outer-spin-button {
-    height: auto
-}
-
 input[type=search] {
     box-sizing: content-box;
     appearance: textfield;
-}
-
-input[type=search]::search-cancel-button,
-input[type=search]::search-decoration {
-    appearance: none
 }
 
 fieldset {
@@ -4320,7 +4310,6 @@ tbody.collapse.in {
     cursor: not-allowed;
     background-color: transparent;
     background-image: none;
-    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false)
 }
 
 .open>.dropdown-menu {
@@ -5066,7 +5055,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     max-height: 340px
 }
 
-@media (max-device-width:480px) and (orientation:landscape) {
+@media (max-width:480px) and (orientation:landscape) {
     .navbar-fixed-bottom .navbar-collapse,
     .navbar-fixed-top .navbar-collapse {
         max-height: 200px
@@ -6143,7 +6132,7 @@ a.thumbnail:hover {
 
 .progress-bar-striped,
 .progress-striped .progress-bar {
-    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);0
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
     background-size: 40px 40px;
 }
 
@@ -7402,19 +7391,18 @@ button.close {
     overflow: hidden
 }
 
-.carousel-inner>.item {
+.carousel-inner > .item {
     position: relative;
     display: none;
-    transition: .6s ease-in-out left
+    transition: .6s ease-in-out left;
 }
 
-.carousel-inner>.item>a>img,
-.carousel-inner>.item>img {
-    line-height: 1
+.carousel-inner > .item > a > img,
+.carousel-inner > .item > img {
+    line-height: 1;
 }
 
-@media all and (transform-3d),
- {
+@media all and (transform-3d){
     .carousel-inner>.item {
         transition: transform .6s ease-in-out;
         backface-visibility: hidden;
@@ -7491,8 +7479,8 @@ button.close {
 }
 
 .carousel-control.left {
-    background-image: linear-gradient(left, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
-    background-image: linear-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
+    background-image: linear-gradient(to left, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
+    background-image: linear-gradient(to left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
     background-image: linear-gradient(to right, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
     background-repeat: repeat-x
@@ -7501,9 +7489,9 @@ button.close {
 .carousel-control.right {
     right: 0;
     left: auto;
-    background-image: linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
-    background-image: linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
-    background-image: linear-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
+    background-image: linear-gradient(to left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
+    background-image: linear-gradient(to left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
+    background-image: linear-gradient(to left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
     background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
     background-repeat: repeat-x
