@@ -3644,7 +3644,6 @@ textarea.input-lg {
 .btn[disabled],
 fieldset[disabled] .btn {
     cursor: not-allowed;
-    filter: alpha(65);
     box-shadow: none;
     opacity: .65
 }
@@ -6937,7 +6936,6 @@ button.list-group-item-danger.active:hover {
     line-height: 1;
     color: #000;
     text-shadow: 0 1px 0 #fff;
-    filter: alpha(20);
     opacity: .2
 }
 
@@ -6946,7 +6944,6 @@ button.list-group-item-danger.active:hover {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-    filter: alpha(50);
     opacity: .5
 }
 
@@ -7016,12 +7013,10 @@ button.close {
 }
 
 .modal-backdrop.fade {
-    filter: alpha(0);
     opacity: 0
 }
 
 .modal-backdrop.in {
-    filter: alpha(50);
     opacity: .5
 }
 
@@ -7110,13 +7105,11 @@ button.close {
     word-spacing: normal;
     word-wrap: normal;
     white-space: normal;
-    filter: alpha(0);
     opacity: 0;
     line-break: auto
 }
 
 .tooltip.in {
-    filter: alpha(90);
     opacity: .9
 }
 
@@ -7462,7 +7455,6 @@ button.close {
     color: #fff;
     text-align: center;
     text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-    filter: alpha(50);
     opacity: .5
 }
 
@@ -7477,7 +7469,7 @@ button.close {
     left: auto;
     background-image: linear-gradient(to left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
     background-image: linear-gradient(to left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
-    background-image: linear-gradient(to left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
+    background-image: linear-gradient(to left top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
     background-repeat: repeat-x;
 }
 
@@ -7485,7 +7477,6 @@ button.close {
 .carousel-control:hover {
     color: #fff;
     text-decoration: none;
-    filter: alpha(90);
     outline: 0;
     opacity: .9
 }
@@ -7700,9 +7691,7 @@ button.close {
     position: fixed
 }
 
-@viewport {
-    width: device-width
-}
+
 
 .visible-lg,
 .visible-md,
