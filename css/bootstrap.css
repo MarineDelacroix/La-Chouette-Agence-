@@ -4112,13 +4112,6 @@ fieldset[disabled] .btn-link {
     box-shadow: none;
 }
 
-.btn-link,
-.btn-link:active,
-.btn-link:focus,
-.btn-link:hover {
-    border-color: transparent
-}
-
 .btn-link:focus,
 .btn-link:hover {
     color: #23527c;
@@ -7469,7 +7462,6 @@ button.close {
     left: auto;
     background-image: linear-gradient(to left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
     background-image: linear-gradient(to left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
-    background-image: linear-gradient(to left top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
     background-repeat: repeat-x;
 }
 
@@ -7680,7 +7672,6 @@ button.close {
     color: transparent;
     text-shadow: none;
     background-color: transparent;
-    border: 0
 }
 
 .hidden {
