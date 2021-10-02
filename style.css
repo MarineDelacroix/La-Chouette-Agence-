@@ -714,7 +714,7 @@ h3 {
 }
 
 h1 {
-    color: #333333!important;
+    color: #f3976c!important;
 }
 
 h4 {
@@ -772,10 +772,6 @@ p.grey {
 
 .bgc-atomic-tangerine {
     background-color: #F3976C;
-}
-
-.tc-white {
-    color: #FFFFFF!important;
 }
 h3.tc-white{
     color:#FFFFFF!important;
